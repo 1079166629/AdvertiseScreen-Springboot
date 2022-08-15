@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="SpringbootTestProject:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringbootTestProject_jar3</output-path>
+    <root id="root">
+      <element id="archive" name="SpringbootTestProject.jar">
+        <element id="module-output" name="AdvertiseScreen" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$PROJECT_DIR$/lib/Msc.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

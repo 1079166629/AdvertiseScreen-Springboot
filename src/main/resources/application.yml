@@ -1,0 +1,11 @@
+
+
+server:
+  port: 8088
+  address: localhost
+
+myPort: 8082
+
+locationUnix: /opt/location/tempDir
+
+locationWin: ${project.basedir}\src\main\java\com\ysp\upload

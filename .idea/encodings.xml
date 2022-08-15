@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../.m2/repository/org/springframework/boot/spring-boot-starter-parent/2.7.1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringbootTest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libmsc32.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/libmsc64.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/msc32.dll" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/msc64.dll" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/usr/service/voice_rec.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/libmsc32.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/libmsc64.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/msc32.dll" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/msc64.dll" charset="GBK" />
+  </component>
+</project>

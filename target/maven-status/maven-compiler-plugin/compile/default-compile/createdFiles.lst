@@ -1,0 +1,8 @@
+com\usr\common\R.class
+com\usr\service\picture_rec.class
+com\usr\controller\CommonController.class
+com\usr\HelloApplication.class
+com\usr\service\voice_rec$1.class
+com\usr\service\voice_rec.class
+com\usr\config\MultipartConfig.class
+com\usr\controller\HelloController.class

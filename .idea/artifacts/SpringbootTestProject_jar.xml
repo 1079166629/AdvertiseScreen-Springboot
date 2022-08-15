@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SpringbootTestProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringbootTestProject_jar</output-path>
+    <root id="archive" name="SpringbootTestProject.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$PROJECT_DIR$/lib/Msc.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>
