@@ -9,6 +9,7 @@ import org.springframework.util.StringUtils;
 import javax.imageio.stream.FileImageOutputStream;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.Objects;
 
 
 public class picture_rec {
@@ -68,19 +69,18 @@ public class picture_rec {
 
             // 人脸检测
             JSONObject res = client.detect(image, imageType, options);
-            //System.out.println("解析内容" + res.toString());
-
-            try {
+            //System.out.println("解析内容" + res.getString("error_msg"));
+            if(Objects.equals(res.getString("result"), "null")) return res.getString("error_msg");
+            else{
                 JSONObject person = new JSONObject(res.getJSONObject("result").getJSONArray("face_list").get(0).toString());
                 JSONObject Gender = new JSONObject(person.get("gender").toString());
                 System.out.println("解析内容" + Gender.get("type"));
                 return Gender.get("type").toString();
-            } catch (Exception e) {
-                e.printStackTrace();
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "No detect,Please try again.";
+        return "错误";
     }
 }

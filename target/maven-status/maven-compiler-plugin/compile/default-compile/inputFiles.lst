@@ -1,7 +1,14 @@
 D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\config\MultipartConfig.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\tools\WaveHeader.java
 D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\service\voice_rec.java
 D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\HelloApplication.java
-D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\common\R.java
 D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\controller\HelloController.java
-D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\controller\CommonController.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\utils\FileUtil.java
 D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\service\picture_rec.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\tools\EncodeType.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\common\R.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\service\iflytek_detect.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\service\speech_syn.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\utils\HttpUtil.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\controller\CommonController.java
+D:\ProgramData\IDEA\AdvertiseScreen-Springboot-\src\main\java\com\usr\tools\PcmToMp3.java

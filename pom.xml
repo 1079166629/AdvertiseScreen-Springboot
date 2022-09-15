@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.ysp</groupId>
-    <artifactId>SpringbootTestProject</artifactId>
+    <artifactId>AdvertiseScreen</artifactId>
 
     <version>1.0</version>
 
@@ -102,19 +102,32 @@
             <version>${snakeyaml.version}</version>
         </dependency>
 
+        <!--更改临时文件：MultipartConfig-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <!-- 支持 @ConfigurationProperties 注解 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+
     </dependencies>
     <build>
-        <resources>
-            <resource>
-                <directory>
-                    ${project.basedir}
-                </directory>
-                <includes>
-                    <include>*.dll</include>
-                    <include>*.so</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

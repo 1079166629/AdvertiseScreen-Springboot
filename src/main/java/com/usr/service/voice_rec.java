@@ -55,9 +55,6 @@ public class voice_rec {
             byte[] buffer = audioFile.getBytes();
             audioFile.transferTo(file);
             //fileInputStream = new FileInputStream(base_path);
-
-
-
             //byte[] pcmbyte = Arrays.copyOfRange(buffer, 44, buffer.length);
 
             if (buffer == null || buffer.length == 0) {
@@ -77,6 +74,7 @@ public class voice_rec {
                 //System.out.println(str);
                 //System.out.println(curRet.toString());
                 //return curRet.toString();
+                int res = ResultProcess(curRet.toString());
                 return curRet.toString();
             }
 
@@ -86,68 +84,12 @@ public class voice_rec {
         return null;
     }
 
-    private static byte[] InputStreamToByte(FileInputStream fis) throws IOException {
-        ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
-        long size = fis.getChannel().size();
-        byte[] buffer = null;
-        if (size <= Integer.MAX_VALUE) {
-            buffer = new byte[(int) size];
-        } else {
-            buffer = new byte[8];
-            for (int ix = 0; ix < 8; ++ix) {
-                int offset = 64 - (ix + 1) * 8;
-                buffer[ix] = (byte) ((size >> offset) & 0xff);
-            }
-        }
-        int len;
-        while ((len = fis.read(buffer)) != -1) {
-            byteStream.write(buffer, 0, len);
-        }
-        byte[] data = byteStream.toByteArray();
-        IOUtils.closeQuietly(byteStream);
-        return data;
-    }
-    public static String getEncoding(String str) {
-        String encode = "GB2312";
-        try {
-            if (isEncoding(str, encode)) { // 判断是不是GB2312
-                return encode;
-            }
-        } catch (Exception exception) {
-        }
-        encode = "ISO-8859-1";
-        try {
-            if (isEncoding(str, encode)) { // 判断是不是ISO-8859-1
-                return encode;
-            }
-        } catch (Exception exception1) {
-        }
-        encode = "UTF-8";
-        try {
-            if (isEncoding(str, encode)) { // 判断是不是UTF-8
-                return encode;
-            }
-        } catch (Exception exception2) {
-        }
-        encode = "GBK";
-        try {
-            if (isEncoding(str, encode)) { // 判断是不是GBK
-                return encode;
-            }
-        } catch (Exception exception3) {
-        }
-        return ""; // 如果都不是，说明输入的内容不属于常见的编码格式。
-    }
-
-    public static boolean isEncoding(String str, String encode) {
-        try {
-            if (str.equals(new String(str.getBytes(), encode))) {
-                return true;
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        return false;
+    private  int ResultProcess(String res){
+        System.out.println(res);
+        if(res.contains("1") || res.contains("健身")){
+            return 4001;
+        };
+        return 0;
     }
     private RecognizerListener recListener = new RecognizerListener() {
         @Override

@@ -1,0 +1,10 @@
+
+
+server:
+  port: 8088
+
+myPort: 8082
+
+locationUnix: /opt/location/tempDir
+
+locationWin: /tmp/tomcat_upload
